@@ -4,8 +4,12 @@
       <div class="row header" v-cloak>
         <div class="col">
           <!-- 漢堡按鈕 -->
-          <button class="hamburger hamburger--squeeze" type="button">
-            <!-- @click="active" -->
+          <button
+            class="hamburger hamburger--squeeze is-active"
+            type="button"
+            @click="active"
+          >
+            <!--  -->
 
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
@@ -27,7 +31,7 @@
             <a href="./ligin.html">
               <span>
                 <i class="fas fa-user-circle"></i>
-                <p>登入 / 註</p>
+                <p>登入 / 註冊</p>
               </span>
             </a>
           </div>
@@ -69,6 +73,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    active() {
+      // $("button.hamburger").toggleClass("is-active");
+      this.toggleClass("is-active");
+
+      // $(".menu").slideToggle();
+    },
   },
 };
 </script>
