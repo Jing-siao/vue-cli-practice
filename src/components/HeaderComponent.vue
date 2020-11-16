@@ -27,7 +27,7 @@
             <a href="./ligin.html">
               <span>
                 <i class="fas fa-user-circle"></i>
-                <p>登入 / 註冊</p>
+                <p>登入 / 註</p>
               </span>
             </a>
           </div>
