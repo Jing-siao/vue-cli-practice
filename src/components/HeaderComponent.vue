@@ -5,9 +5,10 @@
         <div class="col">
           <!-- 漢堡按鈕 -->
           <button
-            class="hamburger hamburger--squeeze is-active"
+            class="hamburger hamburger--squeeze"
             type="button"
             @click="active"
+            :class="isActive"
           >
             <!--  -->
 
@@ -72,12 +73,15 @@ export default {
           link: "javascript:;",
         },
       ],
+      isActive: {
+        "is-active": false,
+      },
     };
   },
   methods: {
     active() {
       // $("button.hamburger").toggleClass("is-active");
-      this.toggleClass("is-active");
+      this.isActive["is-active"] = !this.isActive["is-active"];
 
       // $(".menu").slideToggle();
     },
