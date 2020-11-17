@@ -89,8 +89,8 @@ header {
 
             i {
               display: inline-block;
-              font-size: 30px;
-              line-height: 40px;
+              font-size: 28px;
+              // line-height: 40px;
               // border: 1px solid rgb(224, 57, 57);
               color: $darkgrey;
               vertical-align: top;
@@ -98,7 +98,7 @@ header {
             }
 
             p {
-              display: inline-block;
+
               margin-left: 5px;
               // border: 1px solid black;
               vertical-align: top;
@@ -171,6 +171,12 @@ header {
 
       div.member {
         display: inline-block;
+
+        span {
+          p {
+            display: inline-block;
+          }
+        }
 
       }
 
@@ -255,23 +261,38 @@ header {
         }
       }
 
-      div.member {
-        a {
-          span {
-            p {
-              display: none;
-            }
-          }
-        }
-
-
-
-      }
-
       button.hamburger {
         display: inline-block;
         padding: 0 5px;
 
+      }
+    }
+  }
+}
+
+@media (max-width:1140px)and(min-width:721px) {
+  header {
+    div.header {
+      div.member {
+        span {
+          p {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:720px) {
+  header {
+    div.header {
+      div.member {
+        span {
+          p {
+            display: none;
+          }
+        }
       }
     }
   }

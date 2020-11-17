@@ -1,10 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
-
 // import './public/css' 以下放共用的css檔
 import './reset.css'
 import './bootstrap/bootstrap-grid.min.css'
 import './bootstrap/hamburgers.css'
+
+import Vue from 'vue'
+import App from './App.vue'
+
+
 // import './public/script.html' 以下放共用的js檔
 
 Vue.config.productionTip = false

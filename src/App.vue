@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <Banner />
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <TitleComponent :title="title" />
   </div>
@@ -11,6 +11,7 @@
 import HelloWorld from "./components/HelloWorld.vue";
 import TitleComponent from "./components/Title.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
+import Banner from "./components/Banner.vue";
 
 export default {
   name: "App",
@@ -23,6 +24,7 @@ export default {
     HelloWorld,
     TitleComponent,
     HeaderComponent,
+    Banner,
   },
 };
 </script>
