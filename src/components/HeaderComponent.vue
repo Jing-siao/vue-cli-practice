@@ -22,6 +22,7 @@
             </a>
           </div>
           <ul class="menu">
+            <!-- VueSlideUpDown :active="active" -->
             <a :href="item.link" v-for="(item, index) in menu" :key="index">
               <li>
                 {{ item.title }}
@@ -42,6 +43,7 @@
   </header>
 </template> 
 <script>
+import $ from "jquery";
 export default {
   name: "headerComponent",
   data() {
@@ -76,6 +78,7 @@ export default {
       isActive: {
         "is-active": false,
       },
+      // active: true,
     };
   },
   methods: {
@@ -83,7 +86,9 @@ export default {
       // $("button.hamburger").toggleClass("is-active");
       this.isActive["is-active"] = !this.isActive["is-active"];
 
-      // $(".menu").slideToggle();
+      // this.active = !this.active;
+
+      $(".menu").slideToggle();
     },
   },
 };
