@@ -87,10 +87,12 @@ export default {
       this.isActive["is-active"] = !this.isActive["is-active"];
 
       // this.active = !this.active;
-
+    },
+    slideToggle() {
       $(".menu").slideToggle();
     },
   },
+  mounted() {},
 };
 </script>
 <style lang="sass" scoped>
